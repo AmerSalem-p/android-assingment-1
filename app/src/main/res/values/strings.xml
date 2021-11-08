@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">assignment</string>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="aspects">
+        <item>* We will calculate your Body Mass Index</item>
+        <item>* Well will show you various workouts</item>
+        <item>* We hope you get what you want</item>
+
+    </string-array>
+
+
+</resources>

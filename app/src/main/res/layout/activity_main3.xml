@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="50dp"
+        android:text="Use our built in time when working out" />;
+    android:textSize="16pt"
+    android:layout_gravity="center"
+
+    />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="00:00:00"
+        android:textSize="24pt" />
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:onClick="Start"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:onClick="Stop"
+            android:text="Stop" />
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="Reset"
+            android:text="Reset" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/str3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/str1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/str2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/athlete"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:text="pro Bodybuilders"
+        android:onClick="onClick_athlete"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/chest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickChest"
+                    android:text="Chest Workouts" />
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickBack"
+                    android:text="BACK WORKOUTS" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/shoulder"
+                    android:layout_width="172dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickShoulders"
+                    android:text="SHOULDERS WORKOUTS" />
+
+                <Button
+                    android:id="@+id/leg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickLegs"
+                    android:text="LEGS WORKOUTS" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/abs"
+                    android:layout_width="171dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickAbs"
+                    android:text="ABS WORKOUT" />
+
+                <Button
+                    android:id="@+id/arm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickArms"
+                    android:text="Arms WORKOUTS" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/weightlose"
+                    android:layout_width="169dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickWeightLost"
+                    android:text="WeightLose Workouts" />
+
+                <Button
+                    android:id="@+id/wightgain"
+                    android:layout_width="166dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:onClick="btn_OnClickWightGain"
+                    android:text="WeightGain WORKOUTS" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

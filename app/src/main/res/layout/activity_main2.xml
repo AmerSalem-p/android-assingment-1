@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        app:srcCompat="@drawable/bodybuilding_and_gym_logo_on_transparent_background_png" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:text="Enter your Information"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Weight (KG)"
+        android:inputType="textPersonName"
+
+        />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Enter Height (M)"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Select Gender" />
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/genders"
+        android:gravity="center"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="Age" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:entries="@array/aspects" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple_700"
+        android:onClick="btn_Next"
+        android:text="next" />
+
+
+
+
+
+</LinearLayout>
